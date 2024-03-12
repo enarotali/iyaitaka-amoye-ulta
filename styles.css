@@ -1,0 +1,98 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 60px;
+    color: #0b4ed5;
+    
+}
+  
+
+main {
+    text-align: center;
+}
+
+.birthday-section {
+    position: relative;
+}
+
+.photo-container {
+    margin-bottom: 20px;
+}
+
+.photo-container img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    animation: movePhoto 10s infinite linear;
+}
+
+.message-box {
+    background-color: #023e2b;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.message-box p {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #ff0088e4;
+}
+
+.message-box  {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #d0b800;
+}
+
+.cake {
+    position: relative;
+}
+
+.candle {
+    position: absolute;
+    bottom: px;
+    left: 50%;
+    transform: translateX(-52%);
+    width: 20px;
+    height: 120px;
+    background-color: #cc3727;
+    border-radius: 8%;
+    animation: candleBlink 1s infinite alternate;
+}
+
+@keyframes movePhoto {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes candleBlink {
+    0% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
